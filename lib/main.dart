@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_shop/Address/addAddress.dart';
 import 'package:e_shop/Counters/ItemQuantity.dart';
+import 'package:e_shop/admobservice.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,6 +17,7 @@ import 'Store/storehome.dart';
 Future<void> main() async
 {
   WidgetsFlutterBinding.ensureInitialized();
+  AdMobService.initialize();
   EcommerceApp.auth = FirebaseAuth.instance ;
   EcommerceApp.sharedPreferences = await SharedPreferences.getInstance();
   EcommerceApp.firestore = Firestore.instance ;

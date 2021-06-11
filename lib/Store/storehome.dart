@@ -3,9 +3,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_shop/Store/cart.dart';
 import 'package:e_shop/Store/product_page.dart';
 import 'package:e_shop/Counters/cartitemcounter.dart';
+import 'package:e_shop/admobservice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 import 'package:e_shop/Config/config.dart';
 import '../Widgets/loadingWidget.dart';
@@ -26,6 +28,14 @@ class _StoreHomeState extends State<StoreHome> {
     width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
+        bottomNavigationBar: Container(
+          height: 50,
+          child:
+          AdWidget(
+            key: UniqueKey(),
+            ad: AdMobService.creatBannerAd()..load(),
+          ),
+        ),
         appBar: AppBar(
           flexibleSpace: Container(
             decoration: new BoxDecoration(
