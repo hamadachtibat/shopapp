@@ -113,7 +113,7 @@ Widget sourceOrderInfo(ItemModel model, BuildContext context,
                               ),
                             ),
                             Text(
-                              "€ ",
+                              "Dh ",
                               style: TextStyle(color: Colors.red, fontSize: 16.0),
                             ),
                             Text(

@@ -202,7 +202,7 @@ Widget sourceInfo(ItemModel model, BuildContext context,
                             child: Row(
                               children: [
                                 Text(
-                                  r"Origional Price: € ",
+                                  r"Origional Price: Dh ",
                                   style: TextStyle(
                                     fontSize: 14.0,
                                     color: Colors.grey,
@@ -233,7 +233,7 @@ Widget sourceInfo(ItemModel model, BuildContext context,
                                   ),
                                 ),
                                 Text(
-                                  "€ ",
+                                  "Dh ",
                                   style: TextStyle(color: Colors.red, fontSize: 16.0),
                                 ),
                                 Text(
