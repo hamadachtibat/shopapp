@@ -5,9 +5,6 @@ import 'package:e_shop/Widgets/customTextField.dart';
 import 'package:e_shop/DialogBox/errorDialog.dart';
 import 'package:flutter/material.dart';
 
-
-
-
 class AdminSignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
